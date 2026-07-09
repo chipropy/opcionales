@@ -1,322 +1,565 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Activador de Opcionales V16 · PES/eFootball PS3 (BLUS/BLES)</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Activador de opcionales V16 para PES/eFootball en PS3, compatible con BLUS y BLES. Menus, marcadores y comentaristas opcionales.">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0e1a13;color:#e7efe9;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5}
-a{color:#7fd99a;text-decoration:none}
-a:hover{text-decoration:underline}
-img{border:0;max-width:100%;height:auto;display:block}
-.wrap{max-width:980px;margin:0 auto;padding:0 16px}
-
-/* HERO */
-.hero{background:#123322;background:linear-gradient(#173f28,#0e1a13);border-bottom:3px solid #2e7d4f;padding:26px 0 22px}
-.hero h1{font-size:26px;color:#ffffff;text-align:center;letter-spacing:1px}
-.hero .sub{text-align:center;color:#a9c9b6;margin-top:6px;font-size:14px}
-.hero .sub a{color:#f2c94c}
-.hero-img{margin:18px auto;max-width:560px;border:2px solid #2e7d4f;border-radius:6px;overflow:hidden}
-.hero-txt{text-align:center;color:#cfe3d7;max-width:640px;margin:10px auto 0;font-size:14px}
-
-/* BUTTONS */
-.btns{margin:10px 0 2px}
-.btn{display:inline-block;min-width:150px;text-align:center;padding:9px 14px;margin:4px 8px 4px 0;
-border-radius:5px;font-weight:bold;font-size:14px;color:#fff !important;text-decoration:none;border:1px solid rgba(0,0,0,.25)}
-.btn:hover{text-decoration:none;opacity:.9}
-.btn .tag{display:inline-block;background:rgba(0,0,0,.28);border-radius:3px;padding:1px 6px;margin-right:6px;font-size:11px;letter-spacing:.5px}
-.btn-blus{background:#1a5fb4}
-.btn-bles{background:#c0392b}
-
-.pair{margin:16px 0}
-.pair .lbl{font-size:13px;color:#a9c9b6;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
-
-/* NAV */
-.nav{background:#0b1710;border-bottom:1px solid #21402d;padding:10px 0}
-.nav .wrap{text-align:center}
-.nav a{display:inline-block;color:#cfe3d7;font-size:13px;font-weight:bold;margin:4px 10px;text-transform:uppercase;letter-spacing:.5px}
-.nav a:hover{color:#f2c94c;text-decoration:none}
-
-/* SECTIONS */
-section{padding:30px 0}
-section.alt{background:#101f16}
-.sec-head{text-align:center;margin-bottom:20px}
-.sec-head h2{font-size:21px;color:#ffffff;text-transform:uppercase;letter-spacing:1px}
-.sec-head .line{width:60px;height:3px;background:#2e7d4f;margin:8px auto 0}
-.sec-head p{color:#a9c9b6;font-size:13.5px;margin-top:8px;max-width:600px;margin-left:auto;margin-right:auto}
-
-.notice{background:#1c2b1f;border:1px solid #2e7d4f;border-left:4px solid #f2c94c;border-radius:4px;
-padding:12px 14px;margin:0 0 20px;font-size:13.5px;color:#d9e8de}
-.notice a{font-weight:bold}
-
-/* CARDS */
-.grid{display:block}
-.card{background:#132416;border:1px solid #234a30;border-radius:6px;overflow:hidden;margin-bottom:16px}
-.cimg{width:100%;height:auto;max-height:230px;object-fit:cover;background:#0b1710}
-.cbody{padding:14px 16px}
-.card h3{font-size:16.5px;color:#ffffff;margin-bottom:6px}
-.meta{margin-bottom:8px}
-.badge{display:inline-block;font-size:11px;font-weight:bold;padding:2px 8px;border-radius:10px;margin:0 5px 5px 0;letter-spacing:.3px}
-.b-both{background:#20422b;color:#8fe3ab}
-.b-blus{background:#173257;color:#8fc0f2}
-.b-bles{background:#4d2018;color:#f2a293}
-.b-req{background:#4a3510;color:#f2c94c}
-.b-noreq{background:#1c3b28;color:#7fd99a}
-.b-info{background:#2a2a2a;color:#ccc}
-.desc{color:#c4d8cb;font-size:13.5px;margin-bottom:6px}
-.credit{color:#8ba896;font-size:12px;margin-top:6px}
-.credit a{color:#8ba896;text-decoration:underline}
-
-/* FOOTER */
-footer{background:#0b1710;border-top:1px solid #21402d;padding:26px 0;text-align:center}
-footer h3{color:#fff;font-size:17px;margin-bottom:6px}
-footer .yt{display:inline-block;margin-top:8px;color:#f2c94c;font-weight:bold}
-footer .credits{margin-top:14px;font-size:12.5px;color:#7f9c8b;max-width:640px;margin-left:auto;margin-right:auto}
-footer .credits a{color:#a9c9b6}
-footer .legal{margin-top:16px;font-size:11.5px;color:#5d7568}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activador de Opcionales V16 - PES PS3</title>
+    <style>
+        /* Estilos básicos compatibles con navegador PS3 */
+        body {
+            background: #1a1a1a;
+            color: #eee;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        }
+        h1, h2, h3 {
+            color: #fff;
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 22px;
+            border-left: 5px solid #66ccff;
+            padding-left: 12px;
+            margin: 30px 0 15px 0;
+        }
+        .section {
+            background: #2a2a2a;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #444;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 6px;
+        }
+        .badge-blus { background: #0077be; color: #fff; }
+        .badge-bles { background: #cc5500; color: #fff; }
+        .badge-activador { background: #6aa84f; color: #fff; }
+        .badge-desactivador { background: #cc0000; color: #fff; }
+        .badge-opcional { background: #ff9900; color: #000; }
+        .download-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+            margin: 10px 0;
+            padding: 10px;
+            background: #333;
+            border-radius: 6px;
+        }
+        .download-row img {
+            height: 40px;
+            width: auto;
+            border: 0;
+        }
+        .download-row .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .download-row .links a {
+            display: inline-block;
+            background: #444;
+            padding: 4px 12px;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 13px;
+            border: 1px solid #666;
+        }
+        .download-row .links a:hover {
+            background: #555;
+        }
+        .credit {
+            font-size: 13px;
+            color: #aaa;
+            margin-top: 5px;
+        }
+        .credit a {
+            color: #66ccff;
+        }
+        .center {
+            text-align: center;
+        }
+        .img-preview {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 10px 0;
+            border: 1px solid #555;
+        }
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            margin: 2px 4px 2px 0;
+        }
+        .tag-blus { background: #0077be; color: #fff; }
+        .tag-bles { background: #cc5500; color: #fff; }
+        .tag-ambos { background: #6a6a6a; color: #fff; }
+        .separator {
+            border-top: 1px solid #444;
+            margin: 25px 0;
+        }
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 12px;
+            margin-top: 30px;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+        }
+        /* Compatibilidad con PS3 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 6px;
+            vertical-align: middle;
+        }
+        /* Para que los enlaces no se salgan */
+        .break-word {
+            word-break: break-all;
+        }
+    </style>
 </head>
 <body>
+<div class="container">
 
-<div class="hero">
-  <div class="wrap">
-    <h1>ACTIVADOR DE OPCIONALES V16</h1>
-    <div class="sub">Basado en el activador de <a href="https://www.youtube.com/@PES_Forever" target="_blank" rel="noopener">PES Forever</a></div>
-    <div class="hero-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrdeOFouEolFRwDb4-IGprtMj58t4kvhAl3D5Kgs2DoKt3HjGfVcVdd_1CRDe2qVWroyGOCQPfbk_n8y63GylPKwDNcP5X77MipV2Se3CX3Qq_MMURFB-F_gwokQ6WlSkU1qCGv767jjqqEwoKYL_KgTofsuCQLuceQF1gvc4whJ9A5wg00gosHu0bjD3O/w558-h315/photo_2026-07-09_07-54-22.jpg" alt="Activador de Opcionales V16" width="558" height="315"></div>
-    <p class="hero-txt">Descarga el paquete de activacion correspondiente a la region de tu juego. Ambos archivos son necesarios solo si vas a instalar contenido de ambas regiones; de lo contrario, descarga unicamente el de tu version.</p>
-    <div class="pair" style="text-align:center">
-      <div class="lbl">Activador</div>
-      <div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/w33yz949vfb6n00/BLUS+Activador+Opcionales+v16+By+KiZeo.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/w4vl6l75jp83xxm/BLES+Activador+Opcionales+v16+By+KiZeo.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-    </div>
-    <div class="pair" style="text-align:center">
-      <div class="lbl">Desactivador &middot; Vuelve a la normalidad</div>
-      <div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/kmnti67izc56dce/BLUS+Desactivador+Opcionales+v16+By+KiZeo.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/9hhc1ymusalt5fh/BLES+Desactivador+Opcionales+v16+By+KiZeo.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-    </div>
-  </div>
-</div>
+    <h1>⚽ ACTIVADOR DE OPCIONALES V16</h1>
+    <p style="text-align:center; font-size:16px;">
+        <span style="background:#f4cccc; padding:4px 8px;">BASADO EN EL ACTIVADOR DE </span>
+        <a href="https://www.youtube.com/@PES_Forever" style="background:#cc0000; color:white; padding:4px 10px; border-radius:4px;">PES FOREVER</a>
+    </p>
 
-<div class="nav">
-  <div class="wrap">
-    <a href="#portadas">Iconos y Portadas</a>
-    <a href="#menus">Menus</a>
-    <a href="#marcadores">Marcadores</a>
-    <a href="#comentaristas">Comentaristas</a>
-    <a href="#creditos">Creditos</a>
-  </div>
-</div>
-
-<section id="opcionales">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Opcionales</h2>
-      <div class="line"></div>
-      <p>Los siguientes archivos son para personalizacion del Potato Patch. No son obligatorios.</p>
+    <!-- Imagen principal -->
+    <div class="center">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrdeOFouEolFRwDb4-IGprtMj58t4kvhAl3D5Kgs2DoKt3HjGfVcVdd_1CRDe2qVWroyGOCQPfbk_n8y63GylPKwDNcP5X77MipV2Se3CX3Qq_MMURFB-F_gwokQ6WlSkU1qCGv767jjqqEwoKYL_KgTofsuCQLuceQF1gvc4whJ9A5wg00gosHu0bjD3O/s1280/photo_2026-07-09_07-54-22.jpg" alt="Activador V16" style="max-width:100%; height:auto; border-radius:8px; border:1px solid #555;">
     </div>
-  </div>
-</section>
 
-<section id="portadas" class="alt">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Iconos y Portadas PKG</h2>
-      <div class="line"></div>
-      <p><span class="badge b-both">BLUS + BLES</span> Compatibles con BLES y BLUS por igual.</p>
-    </div>
-    <article class="card">
-      <img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggD4fsn_lqp2jIudx6CFEIowjJs_UWhDlkE8E-mEOiKWAjIhGrmp8TxYa5VbhpK8ttIRgVKyGEpeKrK3MAW-MlaEBuihHlQg1Dk7HrETLIR0EJ9nkBff-goklRYP7k4H7DzQyf5n5eJ9-6GDv5enD7MP6H0BAmRqqakRVHiKALCP_NMyEWl2wyndWJhUnQ/w569-h315/1783590861486-019f4649-e7a5-76fd-a438-221fc83a7133.jpeg" alt="Vista previa de portadas" loading="lazy" width="569" height="315">
-      <div class="cbody">
-        <h3>Galeria de iconos y portadas</h3>
-        <p class="desc">Coleccion de iconos y caratulas personalizadas para tus archivos PKG.</p>
-        <div class="btns">
-          <a class="btn" style="background:#2e7d4f" href="https://kizeo0.github.io/PORTADAS-PES-BLUS-BLES/" target="_blank" rel="noopener">Ver galeria completa</a>
+    <!-- ACTIVADOR -->
+    <div class="section">
+        <h2>🔓 ACTIVADOR (REQUIERE INSTALACIÓN)</h2>
+        <p style="color:#ccc;">Instala el activador correspondiente a tu región para habilitar los opcionales.</p>
+        <div class="download-row">
+            <span class="badge badge-blus">BLUS</span>
+            <a href="https://www.mediafire.com/file/w33yz949vfb6n00/BLUS+Activador+Opcionales+v16+By+KiZeo.pkg/file" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w166-h82/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+            </a>
         </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section id="menus">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Opcionales que requieren activador</h2>
-      <div class="line"></div>
+        <div class="download-row">
+            <span class="badge badge-bles">BLES</span>
+            <a href="https://www.mediafire.com/file/w4vl6l75jp83xxm/BLES+Activador+Opcionales+v16+By+KiZeo.pkg/file" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w163-h81/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+            </a>
+        </div>
+        <div class="credit">📌 <strong>Nota:</strong> Si ya tienes el activador instalado, solo necesitas los PKG opcionales.</div>
     </div>
-    <div class="sec-head" style="margin-top:-6px">
-      <h2 style="font-size:18px">Menus</h2>
-      <p>Interfaces y menus alternativos para eFootball / PES.</p>
+
+    <!-- DESACTIVADOR -->
+    <div class="section">
+        <h2>🔙 DESACTIVADOR (VUELVE A LA NORMALIDAD)</h2>
+        <p style="color:#ccc;">Para desinstalar los opcionales y restaurar el juego original.</p>
+        <div class="download-row">
+            <span class="badge badge-blus">BLUS</span>
+            <a href="https://www.mediafire.com/file/kmnti67izc56dce/BLUS+Desactivador+Opcionales+v16+By+KiZeo.pkg/file" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+            </a>
+            <span class="badge badge-bles">BLES</span>
+            <a href="https://www.mediafire.com/file/9hhc1ymusalt5fh/BLES+Desactivador+Opcionales+v16+By+KiZeo.pkg/file" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+            </a>
+        </div>
     </div>
-    <article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzpqAgh9Tw242aNj05BDjF_51l7a7X_ibWF4KUxXLsejBxmFPRMTo-t03nTDR2DX7p9wn-7_SY_e2Xop07lXPQhjkqMVY-9qOaAiVUUOGTypuAR0xnzCDAcd6UWz0RhEzNFW9_UNy92FhJKb4bVmEJC6EpOUOGLLirY8mcUHCy58T9vZG-SjkhP5KFo1dO/w563-h319/IMG_20231010_190614.jpg" alt="Menú Gráfico eFootball 2024 · Fantasy Edition" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>Menú Gráfico eFootball 2024 · Fantasy Edition</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
-<p class="desc">Interfaz de menú personalizada estilo Fantasy Edition.</p>
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/enrruo56l7p4mlp/blus_MENU_FANTASY_POSETIADOS.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://linkvertise.com/982764/bles-fantasy-menu-ps3/1" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@posetiados/videos" target="_blank" rel="noopener">Posetiados</a></div>
-</div></article><article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjELt0rjCujIeB5ppNZ7zjbFLFxCx6Q4Q1TyhzIzh6krXGymfVOqh3oaWTMLZ9qpdWmbUObFs1htZT2Hyx-KVEkVtBpn2JXK5ahyku5PQJ5kpbaDc1vd2V0-XiRfG8JRoPYxMv7NsYFWB_6uw6_dxvOjNR5_YXUAmXqQ-dD0ygYNaBkLYmjVWMoECrwmJwe/s1920/0913.jpg" alt="Nuevo Menú eFootball · Inspirado en FC 24" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>Nuevo Menú eFootball · Inspirado en FC 24</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
-<p class="desc">Menú con estética inspirada en EA Sports FC 24.</p>
-<div class="btns"><a class="btn btn-blus" href="https://linkvertise.com/982764/blus-menu-eafc24-pes2018/1" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://linkvertise.com/982764/bles-menu-eafc24-pes2018/1" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@posetiados/videos" target="_blank" rel="noopener">Posetiados</a></div>
-</div></article><article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvGB4rQwVxQuld2CLj5rxeY114Epen3I2rf1qFGvetuawawroZa3QB10dYR3uHygqMf50paGap0EjbBNyNan8Ar5MUrvLja281mwqo2E3EJDN7hNqAagC8gbOD4YdXaoq7zxSWRzlgRUzD_aBuT1yyXcsnkZWOFh7ssrvZJbkMzFzbPLP6V0R0xmvwmzNC/s1280/maxresdefault.jpg" alt="Nuevo Menú eFootball 2024 · 1GB" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>Nuevo Menú eFootball 2024 · 1GB</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
-<p class="desc">Versión ligera del menú eFootball 2024, de solo 1GB.</p>
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/le3n4l5jd5qw7ux/NUEVO+MENU+eFootball+blus+by+JYMSNSL.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/bg2i4pa2spxtgl1/NUEVO+MENU+eFootball+bles+by+JYMSNSL.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@JYMSNSL" target="_blank" rel="noopener">JYMSNSL</a></div>
-</div></article><article class="card">
-<div class="cbody">
-<h3>Menú eFootball World</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
-<p class="desc">Menú temático eFootball World. Se descarga en formato .rar.</p>
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/5ej2inxvz9fwu9s/BLUS_eFOOTBALLWORLD_byPESART.rar/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/k3ethm4sly4162k/BLES_eFOOTBALLWORLD_byPESART.rar/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@pesartok" target="_blank" rel="noopener">PESART</a></div>
-</div></article>
-  </div>
-</section>
 
-<section id="marcadores" class="alt">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Marcadores</h2>
-      <div class="line"></div>
-      <p>Marcadores (scoreboards) para tus partidos.</p>
+    <!-- OPCIONALES GENERALES (no requieren activador) -->
+    <div class="section">
+        <h2>📁 OPCIONALES (NO REQUIEREN ACTIVADOR)</h2>
+        <p style="color:#ccc;">Estos archivos son personalizaciones adicionales, no son obligatorios para el funcionamiento del parche.</p>
+
+        <h3 style="margin-top:20px;">🎴 Iconos y Portadas PKG</h3>
+        <p><span class="tag tag-ambos">BLES / BLUS</span> (no requieren activador)</p>
+        <div class="center">
+            <a href="https://kizeo0.github.io/PORTADAS-PES-BLUS-BLES/" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiB_9fO8X7vq92HimmStrtcFR3INAr_g6PMIdOvL8g0EDXlStD5vVD4f5UdME8ZGhHQTV40mlU7CY2Bdyko0R9JEBF4H5xCgAZva3Wr2gvJwdooXlDHoulFmvjWTEvN5OQ05vUE3Z0XsOdkI7PCCq96T2EFtTMUzmrvNa_QxpdYhQeq5GtkGLxc-43BUAUn/w425-h142/ChatGPT%20Image%201%20jun%202026,%2011_10_04%20a.m-Photoroom.png" alt="Portadas" style="max-width:100%; height:auto; border-radius:6px;">
+            </a>
+        </div>
+        <div class="credit">🔗 Haz clic en la imagen para acceder al repositorio de portadas.</div>
+        <div class="center" style="margin:10px 0;">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggD4fsn_lqp2jIudx6CFEIowjJs_UWhDlkE8E-mEOiKWAjIhGrmp8TxYa5VbhpK8ttIRgVKyGEpeKrK3MAW-MlaEBuihHlQg1Dk7HrETLIR0EJ9nkBff-goklRYP7k4H7DzQyf5n5eJ9-6GDv5enD7MP6H0BAmRqqakRVHiKALCP_NMyEWl2wyndWJhUnQ/w569-h315/1783590861486-019f4649-e7a5-76fd-a438-221fc83a7133.jpeg" alt="Preview portadas" style="max-width:100%; height:auto; border-radius:6px; border:1px solid #555;">
+        </div>
     </div>
-    <div class="notice">
-      <span class="badge b-blus">Solo BLUS</span> Hay muchos mas marcadores disponibles, pero solo para BLUS &middot;
-      <a href="https://kizeorepositoriospkg.blogspot.com/2025/11/potato-marcadores.html" target="_blank" rel="noopener">Ver el listado completo</a>
+
+    <!-- MENUS (requieren activador) -->
+    <div class="section">
+        <h2>🎮 MENÚS (REQUIEREN ACTIVADOR)</h2>
+
+        <!-- Menu Graphic eFootball 2024 FANTASY EDITION -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">🌟 MENU GRAPHIC eFootball 2024 FANTASY EDITION</h3>
+            <div class="center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHri-hQmWVD_Ak6FQDP3rwmtXGcxPEdT1s8jGUqive4h3FVsqFfDDBgYFm1hGRfGz26AKxfsw69e6kveubazUJ4jakehGkT85Bm6J63TCUKFl4hCdb3u0LkJ9voOZrXeAJYTX433hCG2EMV07BPiP7ubM-qUUVbPt3cUrsJ7GPxJLUHX6ATx_KwCiDy2Rs/s1920/1031.png" alt="Menu Fantasy" style="max-width:100%; height:auto; border-radius:6px;">
+            </div>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://www.mediafire.com/file/enrruo56l7p4mlp/blus_MENU_FANTASY_POSETIADOS.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://linkvertise.com/982764/bles-fantasy-menu-ps3/1" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+            <div class="credit">Créditos: <a href="https://www.youtube.com/@posetiados/videos" target="_blank">POSETIADOS</a></div>
+        </div>
+
+        <!-- Menu eFootball FC24 -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">⚡ NUEVO MENU eFootball Inspirado FC 24</h3>
+            <div class="center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzpqAgh9Tw242aNj05BDjF_51l7a7X_ibWF4KUxXLsejBxmFPRMTo-t03nTDR2DX7p9wn-7_SY_e2Xop07lXPQhjkqMVY-9qOaAiVUUOGTypuAR0xnzCDAcd6UWz0RhEzNFW9_UNy92FhJKb4bVmEJC6EpOUOGLLirY8mcUHCy58T9vZG-SjkhP5KFo1dO/s3347/IMG_20231010_190614.jpg" alt="Menu FC24" style="max-width:100%; height:auto; border-radius:6px;">
+            </div>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://linkvertise.com/982764/blus-menu-eafc24-pes2018/1" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://linkvertise.com/982764/bles-menu-eafc24-pes2018/1" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+            <div class="credit">Créditos: <a href="https://www.youtube.com/@posetiados/videos" target="_blank">POSETIADOS</a></div>
+        </div>
+
+        <!-- Menu eFootball 2024 1GB -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">📀 NUEVO MENU eFootball 2024 (1GB)</h3>
+            <div class="center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjELt0rjCujIeB5ppNZ7zjbFLFxCx6Q4Q1TyhzIzh6krXGymfVOqh3oaWTMLZ9qpdWmbUObFs1htZT2Hyx-KVEkVtBpn2JXK5ahyku5PQJ5kpbaDc1vd2V0-XiRfG8JRoPYxMv7NsYFWB_6uw6_dxvOjNR5_YXUAmXqQ-dD0ygYNaBkLYmjVWMoECrwmJwe/s1920/0913.jpg" alt="Menu eFootball 2024" style="max-width:100%; height:auto; border-radius:6px;">
+            </div>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://www.mediafire.com/file/le3n4l5jd5qw7ux/NUEVO+MENU+eFootball+blus+by+JYMSNSL.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://www.mediafire.com/file/bg2i4pa2spxtgl1/NUEVO+MENU+eFootball+bles+by+JYMSNSL.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+            <div class="credit">Créditos: <a href="https://www.youtube.com/@JYMSNSL" target="_blank">JymsNsl</a></div>
+        </div>
+
+        <!-- Menu eFootball World -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">🌍 MENU eFootball World</h3>
+            <div class="center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvGB4rQwVxQuld2CLj5rxeY114Epen3I2rf1qFGvetuawawroZa3QB10dYR3uHygqMf50paGap0EjbBNyNan8Ar5MUrvLja281mwqo2E3EJDN7hNqAagC8gbOD4YdXaoq7zxSWRzlgRUzD_aBuT1yyXcsnkZWOFh7ssrvZJbkMzFzbPLP6V0R0xmvwmzNC/s1280/maxresdefault.jpg" alt="Menu eFootball World" style="max-width:100%; height:auto; border-radius:6px;">
+            </div>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://www.mediafire.com/file/5ej2inxvz9fwu9s/BLUS_eFOOTBALLWORLD_byPESART.rar/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://www.mediafire.com/file/k3ethm4sly4162k/BLES_eFOOTBALLWORLD_byPESART.rar/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+            <div class="credit">Créditos: <a href="https://www.youtube.com/@pesartok" target="_blank">PESARTMENU</a></div>
+        </div>
     </div>
-    <article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfx-cFML-5BBt6AIGhryU_z4F7dxybUNIix0TlMEb7pNYKJBwBu_3uGOyzBO_Peak6VW7JGA4VLMV_nT_ZWhH4bV4X_UqujijJdru_PyeiwqsJ2rm1a7aW9CHAbU9VlrqqFQ9tdXPFxYOSpfGeBA-hY9VguA8ZJtLrBNdnvJQPL11rZywvM3oASOxYSxKb/s1204/brave_screenshot_www.youtube.com.png" alt="Mundial de Clubes FIFA 2025" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>Mundial de Clubes FIFA 2025</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
 
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/r7pvmgci5pg8kwv/BLUS_Scoreboard_FIFA_Mundial_De_Clubes_2025_By_PES_Forever.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/mnyohq5lrq6ltck/BLES_Scoreboard_FIFA_Mundial_De_Clubes_2025_By_PES_Forever.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@PES_Forever" target="_blank" rel="noopener">PES Forever</a></div>
-</div></article><article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/a/AVvXsEjFZTkhK_9Afn8THnl4_50A23Lb1axiNGwZ_o8bVJrIZpixHYIlNQLs7_lg9GRQoqKSunVaGW6TVIAhNOISXYvbPl3Dq3uPO8qnSmoLbCBvmjPLhCCmpJjE5_9qvFECr8AKxiwz6Uuz1qAYCMUAIUhr32BWgvm2HH__zkpfttrITcqK8oq5jgBjnk1M52Oe=w400-h224" alt="Copa América 2024 · Con Replay" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>Copa América 2024 · Con Replay</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
+    <!-- MARCADORES -->
+    <div class="section">
+        <h2>📊 MARCADORES (SCOREBOARDS)</h2>
 
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/faz8wdxskw6xlsd/BLUS_Scoreboard_Copa_America_2024_Con_Replay_By_PES_Forever.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/38thf1hb1n8a2gd/BLES_Scoreboard_Copa_America_2024_Con_Replay_By_PES_Forever.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@PES_Forever" target="_blank" rel="noopener">PES Forever</a></div>
-</div></article><article class="card">
-<div class="cbody">
-<h3>La Liga 2024/25 · Con Replay</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
+        <!-- Muchos más marcadores BLUS -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">🔹 MUCHOS MÁS MARCADORES (SOLO BLUS)</h3>
+            <div class="center">
+                <a href="https://kizeorepositoriospkg.blogspot.com/2025/11/potato-marcadores.html" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmk4IWmLMFPlmyDGLXrVvIyDIJPkjzTS3INcfEszR01zgOWOWC7X0VXZg_4VDYjkZqc3tl6oAQk3LrRXaKQ1bXxaN_JN2qd7vSDrZBHjuPtHq4vUp_p8tPxgQVv-wQvhl6rqft7BhO9u8HbBCrELodShPPE4NmKH_1tRKquNnGZvhSLHVB3qncmMs8TmOW/s320/ChatGPT%20Image%201%20jun%202026,%2011_10_04%20a.m-Photoroom.png" alt="Marcadores BLUS" style="max-width:100%; height:auto; border-radius:6px;">
+                </a>
+            </div>
+            <div class="credit">🔗 Haz clic en la imagen para ver más marcadores BLUS.</div>
+        </div>
 
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/asg5ns5nvc09okj/BLUS_Scoreboard_La_Liga_2024_Con_Replay_By_PES_Forever.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/gy62sokq98c0q2x/BLES_Scoreboard_La_Liga_2024_Con_Replay_By_PES_Forever.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@PES_Forever" target="_blank" rel="noopener">PES Forever</a></div>
-</div></article><article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjADGuMLDPmidvL7PI4ksOCdyGchx2QKcsaHvMzDec3DSwMSwleLoMWBrVhYlzUOL6KkcIZAU3R5ftgLKJkY5-IfehgjzzwI6AA4pXf1_ovnbOShgiL2Ls1TU-MnXmLCysHJYYFdOPC5y1azkHwyKXFsMKr-elEu53O-_OTEqEe7h5hTHEGCHMUav9De8rW/s1920/0314.png" alt="Premier League · Estándar" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>Premier League · Estándar</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
+        <!-- Marcador Mundial de Clubes -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">🏆 MARCADOR MUNDIAL DE CLUBES 2025</h3>
+            <div class="center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfx-cFML-5BBt6AIGhryU_z4F7dxybUNIix0TlMEb7pNYKJBwBu_3uGOyzBO_Peak6VW7JGA4VLMV_nT_ZWhH4bV4X_UqujijJdru_PyeiwqsJ2rm1a7aW9CHAbU9VlrqqFQ9tdXPFxYOSpfGeBA-hY9VguA8ZJtLrBNdnvJQPL11rZywvM3oASOxYSxKb/s1204/brave_screenshot_www.youtube.com.png" alt="Marcador Mundial de Clubes" style="max-width:100%; height:auto; border-radius:6px;">
+            </div>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://www.mediafire.com/file/r7pvmgci5pg8kwv/BLUS_Scoreboard_FIFA_Mundial_De_Clubes_2025_By_PES_Forever.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://www.mediafire.com/file/mnyohq5lrq6ltck/BLES_Scoreboard_FIFA_Mundial_De_Clubes_2025_By_PES_Forever.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+            <div class="credit">Créditos: <a href="https://www.youtube.com/@PES_Forever" target="_blank">PES FOREVER</a></div>
+        </div>
 
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/vll0ariwf83fst2/BLUS_Score_Premier_League.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/v0sufm21vimoz3n/BLES_Score_Premier_League.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@PES_Forever" target="_blank" rel="noopener">PES Forever</a></div>
-</div></article><article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjumNrEE3RAGmJ5x501bH5w-Pj7Y2Msxljhe6uQINOLAuUxNLeDKMXab47m4QiQUtMLcTOY57ZJZDtl9PDGttc9E-rnpE406Fba7n6KHeujNtFzabF0lP0WtB1b2EDPfHOGHeaaiEKT29vC58AzsEZAqr54vpEKTXYUOe8LHttsFwaQpjoELumRxMvdVup/s1280/eFootball%202023.png" alt="ESPN · Versión 3 (sin Replay)" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>ESPN · Versión 3 (sin Replay)</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
+        <!-- Marcador Copa America -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">🏅 MARCADOR COPA AMÉRICA 2024</h3>
+            <div class="center">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjFZTkhK_9Afn8THnl4_50A23Lb1axiNGwZ_o8bVJrIZpixHYIlNQLs7_lg9GRQoqKSunVaGW6TVIAhNOISXYvbPl3Dq3uPO8qnSmoLbCBvmjPLhCCmpJjE5_9qvFECr8AKxiwz6Uuz1qAYCMUAIUhr32BWgvm2HH__zkpfttrITcqK8oq5jgBjnk1M52Oe" alt="Copa America" style="max-width:100%; height:auto; border-radius:6px;">
+            </div>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://www.mediafire.com/file/faz8wdxskw6xlsd/BLUS_Scoreboard_Copa_America_2024_Con_Replay_By_PES_Forever.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://www.mediafire.com/file/38thf1hb1n8a2gd/BLES_Scoreboard_Copa_America_2024_Con_Replay_By_PES_Forever.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+            <div class="credit">Créditos: <a href="https://www.youtube.com/@PES_Forever" target="_blank">PES FOREVER</a></div>
+        </div>
 
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/mm9mwyu44kyg7u2/BLUS_Scoreboard_ESPN_v3_Sin_Replay.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/d147us16fvizsbl/BLES_Scoreboard_ESPN_v3_Sin_Replay.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@PES_Forever" target="_blank" rel="noopener">PES Forever</a></div>
-</div></article><article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIcTe3i1twxKVQSOz8oVD05Gegg5aUJZ04Izow_ntcciUYR_yKt2oVEL0hlXPSyNHUnuOmiEDwNlYvJTDgYqwcKOjFGoTi5Y2IvzRl4KyNVI6O-WoBT29eg_e1fcGERemumXS4qNGHAMbos4qFidW3tkwyPHoysRFONQApDdXFaMcs0Pyl-OCezehVbcwb/s1280/eFootball%202023_1.png" alt="ESPN · Versión 4 (sin Replay)" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>ESPN · Versión 4 (sin Replay)</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
+        <!-- Marcador La Liga 24/25 -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">🇪🇸 MARCADOR LA LIGA 24/25</h3>
+            <div class="center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinM2xq2Zv7ZZALcXvPfdqk1gqKBzjj0DBrkCaI4vz7zzfP9pk8U6_UiwrWpp2OpbcTCCK9BBTXUgy7vsCjHAt1nfVqQVLQiGsKhPfVAF_rRpMLkvA6XBhbzJhk9_Y3-xXl7JmCAioYVh3CeMqJspd-Y4xwx0bWXu4_mVwPX_2gvP0VkCYeQTQLEQMg-yxI/s1280/descargar.png" alt="La Liga" style="max-width:100%; height:auto; border-radius:6px;">
+            </div>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://www.mediafire.com/file/asg5ns5nvc09okj/BLUS_Scoreboard_La_Liga_2024_Con_Replay_By_PES_Forever.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://www.mediafire.com/file/gy62sokq98c0q2x/BLES_Scoreboard_La_Liga_2024_Con_Replay_By_PES_Forever.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+            <div class="credit">Créditos: <a href="https://www.youtube.com/@PES_Forever" target="_blank">PES FOREVER</a></div>
+        </div>
 
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/07m12v70xsh8qa5/BLUS_Scoreboard_ESPN_v4_Sin_Replay.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/bpojep4ya7qxa79/BLES_Scoreboard_ESPN_v4_Sin_Replay.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@PES_Forever" target="_blank" rel="noopener">PES Forever</a></div>
-</div></article>
-    <div class="sec-head" style="margin-top:18px">
-      <h2 style="font-size:16px">Serie Marcador Premier</h2>
+        <!-- Marcador Premier League -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">🏴󠁧󠁢󠁥󠁮󠁧󠁿 MARCADOR PREMIER LEAGUE</h3>
+            <div class="center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjADGuMLDPmidvL7PI4ksOCdyGchx2QKcsaHvMzDec3DSwMSwleLoMWBrVhYlzUOL6KkcIZAU3R5ftgLKJkY5-IfehgjzzwI6AA4pXf1_ovnbOShgiL2Ls1TU-MnXmLCysHJYYFdOPC5y1azkHwyKXFsMKr-elEu53O-_OTEqEe7h5hTHEGCHMUav9De8rW/s1920/0314.png" alt="Premier" style="max-width:100%; height:auto; border-radius:6px;">
+            </div>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://www.mediafire.com/file/vll0ariwf83fst2/BLUS_Score_Premier_League.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://www.mediafire.com/file/v0sufm21vimoz3n/BLES_Score_Premier_League.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+        </div>
+
+        <!-- Marcador ESPN v3 -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">📺 MARCADOR ESPN V3</h3>
+            <div class="center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjumNrEE3RAGmJ5x501bH5w-Pj7Y2Msxljhe6uQINOLAuUxNLeDKMXab47m4QiQUtMLcTOY57ZJZDtl9PDGttc9E-rnpE406Fba7n6KHeujNtFzabF0lP0WtB1b2EDPfHOGHeaaiEKT29vC58AzsEZAqr54vpEKTXYUOe8LHttsFwaQpjoELumRxMvdVup/s1280/eFootball%202023.png" alt="ESPN v3" style="max-width:100%; height:auto; border-radius:6px;">
+            </div>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://www.mediafire.com/file/mm9mwyu44kyg7u2/BLUS_Scoreboard_ESPN_v3_Sin_Replay.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://www.mediafire.com/file/d147us16fvizsbl/BLES_Scoreboard_ESPN_v3_Sin_Replay.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+        </div>
+
+        <!-- Marcador ESPN v4 -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">📺 MARCADOR ESPN V4</h3>
+            <div class="center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIcTe3i1twxKVQSOz8oVD05Gegg5aUJZ04Izow_ntcciUYR_yKt2oVEL0hlXPSyNHUnuOmiEDwNlYvJTDgYqwcKOjFGoTi5Y2IvzRl4KyNVI6O-WoBT29eg_e1fcGERemumXS4qNGHAMbos4qFidW3tkwyPHoysRFONQApDdXFaMcs0Pyl-OCezehVbcwb/s1280/eFootball%202023_1.png" alt="ESPN v4" style="max-width:100%; height:auto; border-radius:6px;">
+            </div>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://www.mediafire.com/file/07m12v70xsh8qa5/BLUS_Scoreboard_ESPN_v4_Sin_Replay.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://www.mediafire.com/file/bpojep4ya7qxa79/BLES_Scoreboard_ESPN_v4_Sin_Replay.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+        </div>
+
+        <!-- Marcador Sportv V1, V2, V3 -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">📺 MARCADOR SPORTV (V1, V2, V3)</h3>
+            <p><span class="tag tag-ambos">BLES / BLUS</span></p>
+            <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin:10px 0;">
+                <div>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirhtIrO_S-QGZ6FLqYSoOj9X0vx0we0VzL5B6I8d2xypTEO4_iam5gHZ6TRQ1UtLpIyGPS1Jgj5jfqDDDzrXMNBTHYInEV9r7Oi939s0WdqLcllnZaMcPFUWFwFLNWfIqVfiH3AKM6dErFnJn_g7JN1cHw-VIQUMZmm6HnTFhWekApmn-0PHczmT8p2900/s1920/v1.jpg" alt="Sportv V1" style="max-width:200px; height:auto; border-radius:6px;">
+                    <div class="download-row" style="justify-content:center;">
+                        <span class="badge badge-blus">BLUS</span>
+                        <a href="https://www.mediafire.com/file/wtzz7xuquc4nfrb/Premier+V1+blus.pkg/file" target="_blank">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:30px;">
+                        </a>
+                        <span class="badge badge-bles">BLES</span>
+                        <a href="https://www.mediafire.com/file/w8grw0cijh8r1u7/Premier+V1+bles.pkg/file" target="_blank">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:30px;">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguAdWqyZfmJzsWwomkApy-dFvKIX0QL3H-JHETcg_bAKWxsER9lqHfXCRy65tdXdR35VpPOZ8QZxM5MNlJ6Ka-2klVNOTbFIloetmJMMJNTHtCTsrAQoQFRC96166B7p_WqDOyWt3cdGP90wL22sIoiNXWHa3rEP5_DuW8Uo8H1-hfnYfVOuD-y4hUGKaX/s1920/v2.jpg" alt="Sportv V2" style="max-width:200px; height:auto; border-radius:6px;">
+                    <div class="download-row" style="justify-content:center;">
+                        <span class="badge badge-blus">BLUS</span>
+                        <a href="https://www.mediafire.com/file/yeydx3puokavzzc/Premier+v2+blus.pkg/file" target="_blank">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:30px;">
+                        </a>
+                        <span class="badge badge-bles">BLES</span>
+                        <a href="https://www.mediafire.com/file/vyvphrf6ilvtp4e/Premier+v2+bles.pkg/file" target="_blank">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:30px;">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhP5mfjLYwuMX_U1idXmGOZwQ1CNxfqaO_wClWF-t0Eh5seXFuDyYs-1RKlwpYkfhqKY1o6zBZeb1xu6bpJnMjh6Y6IR6SB5h6n442Bbsf3bXzLlgY5d_WTX-TvhJFacfNv3xo09tQK0dLNT4jqO7Gt-sh4pzXyUCAaxVROSyAXMZ0oWrPw2OnX0udLW7x/s1920/v3.jpg" alt="Sportv V3" style="max-width:200px; height:auto; border-radius:6px;">
+                    <div class="download-row" style="justify-content:center;">
+                        <span class="badge badge-blus">BLUS</span>
+                        <a href="https://www.mediafire.com/file/mwi0kueapgxv68e/Premier+V3+blus.pkg/file" target="_blank">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:30px;">
+                        </a>
+                        <span class="badge badge-bles">BLES</span>
+                        <a href="https://www.mediafire.com/file/ohk1ukqhikmk1by/Premier+V3+bles.pkg/file" target="_blank">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:30px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="credit">Créditos: <a href="https://www.youtube.com/@JYMSNSL" target="_blank">JymsNsl</a></div>
+        </div>
     </div>
-    <article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirhtIrO_S-QGZ6FLqYSoOj9X0vx0we0VzL5B6I8d2xypTEO4_iam5gHZ6TRQ1UtLpIyGPS1Jgj5jfqDDDzrXMNBTHYInEV9r7Oi939s0WdqLcllnZaMcPFUWFwFLNWfIqVfiH3AKM6dErFnJn_g7JN1cHw-VIQUMZmm6HnTFhWekApmn-0PHczmT8p2900/w300-h169/v1.jpg" alt="Marcador Premier · V1" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>Marcador Premier · V1</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
 
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/wtzz7xuquc4nfrb/Premier+V1+blus.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/w8grw0cijh8r1u7/Premier+V1+bles.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@JYMSNSL" target="_blank" rel="noopener">JYMSNSL</a></div>
-</div></article><article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguAdWqyZfmJzsWwomkApy-dFvKIX0QL3H-JHETcg_bAKWxsER9lqHfXCRy65tdXdR35VpPOZ8QZxM5MNlJ6Ka-2klVNOTbFIloetmJMMJNTHtCTsrAQoQFRC96166B7p_WqDOyWt3cdGP90wL22sIoiNXWHa3rEP5_DuW8Uo8H1-hfnYfVOuD-y4hUGKaX/w300-h169/v2.jpg" alt="Marcador Premier · V2" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>Marcador Premier · V2</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
+    <!-- COMENTARIOS -->
+    <div class="section">
+        <h2>🎙️ COMENTARIOS (REQUIEREN ACTIVADOR)</h2>
+        <p style="color:#ccc;">Estos comentaristas reemplazan a los argentinos. Cambia el comentarista en el juego para escucharlos.</p>
+        <p style="color:#ccc;">Para BLES, necesitas tener previamente los comentarios latinos instalados.</p>
 
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/yeydx3puokavzzc/Premier+v2+blus.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/vyvphrf6ilvtp4e/Premier+v2+bles.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@JYMSNSL" target="_blank" rel="noopener">JYMSNSL</a></div>
-</div></article><article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhP5mfjLYwuMX_U1idXmGOZwQ1CNxfqaO_wClWF-t0Eh5seXFuDyYs-1RKlwpYkfhqKY1o6zBZeb1xu6bpJnMjh6Y6IR6SB5h6n442Bbsf3bXzLlgY5d_WTX-TvhJFacfNv3xo09tQK0dLNT4jqO7Gt-sh4pzXyUCAaxVROSyAXMZ0oWrPw2OnX0udLW7x/w300-h169/v3.jpg" alt="Marcador Premier · V3" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>Marcador Premier · V3</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span></div>
+        <!-- Comentarios Latinos BLES -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">🌎 COMENTARIOS LATINOS (BLES)</h3>
+            <div class="download-row">
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://www.mediafire.com/file/zgo749cj3tc7bkg/BLES_Comentarios_Latinos_By_Team_PesGame.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+            <div class="credit">Créditos: Team PesGames</div>
+        </div>
 
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/mwi0kueapgxv68e/Premier+V3+blus.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/ohk1ukqhikmk1by/Premier+V3+bles.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@JYMSNSL" target="_blank" rel="noopener">JYMSNSL</a></div>
-</div></article>
-  </div>
-</section>
+        <!-- Comentarios Closs - Latorre V4.2 -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">🎤 CLOSS - LATORRE V4.2</h3>
+            <div class="center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYpp7erMrniGEmsNqXLASNtQIP3US87YRQSXF316zFhskJwFOOlRM6LuxmC2QJEh8vqXH89hUenl5_oCAezuiU206shUYKZ1NZ2aG6ydUmJzpi0mGOomMH3Vf6X7yjFSnPSQ42vMrYZvl6BJiq7a-ii3LRMH8AY-df-lyF5NNRKQx__asn6vqRat2JQotW/s620/closs-diego.webp" alt="Closs Latorre" style="max-width:100%; height:auto; border-radius:6px;">
+            </div>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://www.mediafire.com/file/ne6h1wygwjoy0nm/BLUS_Closs_LaTorre_v4.2_By_TheViper12.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://www.mediafire.com/file/fxtuuj3ntjk8jyf/BLES_Closs_LaTorre_v4.2_By_TheViper12.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+            <div class="credit">Créditos: The Viper12</div>
+        </div>
 
-<section id="comentaristas">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Comentaristas</h2>
-      <div class="line"></div>
-      <p>Paquetes de voces y comentarios para el juego.</p>
+        <!-- Closs - Latorre V3.6 -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">🎤 CLOSS - LATORRE V3.6</h3>
+            <div class="center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOPTwTzwilsYDy4acTkDufSOv64DWYVFOEl-ECs-bdu2y0v1J0uQ2PJ6rVECRlqzE_BvXmoF5BTv1AQKyjewYB2tFva6jpzjJibiRZYaAfYWex6XrOOmoOjKGq78g9-odwIEBdkUiO2VZgC6a3UlkR4KuAsgy0fCoHwMAq1FD7wJE5eJSeZXRRinIhz4B8/s1200/E0BRyuEXEAAjvrN.jpg" alt="Closs Latorre v3.6" style="max-width:100%; height:auto; border-radius:6px;">
+            </div>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://www.mediafire.com/file/dz104iy2i0kfnv3/BLUS_Closs_Latorre_v36_By_The_Viper12.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://www.mediafire.com/file/1fbs8qp55pqqbk1/BLES_Closs_Latorre_v36_By_The_Viper12.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+            <div class="credit">Créditos: The Viper12</div>
+        </div>
+
+        <!-- Closs - Latorre V3.3 (NO requiere activador) -->
+        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
+            <h3 style="margin-top:0;">🎤 CLOSS - LATORRE V3.3 <span class="badge" style="background:#6aa84f;">NO REQUIERE ACTIVADOR</span></h3>
+            <div class="download-row">
+                <span class="badge badge-blus">BLUS</span>
+                <a href="https://www.mediafire.com/file/e8nylsshr4yj7vj/BLUS_Closs_Latorre_v3.3_Juego_Base_By_PES_Forever.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                </a>
+                <span class="badge badge-bles">BLES</span>
+                <a href="https://www.mediafire.com/file/fw7v44zolujgw2l/BLES_Closs_Latorre_v3.3_Juego_Base_By_PES_Forever.pkg/file" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                </a>
+            </div>
+            <div class="credit">Créditos: PES FOREVER</div>
+        </div>
+
+        <div class="credit" style="margin-top:10px;">
+            <span style="background:#ff00fe; color:#fff; padding:2px 10px; border-radius:12px;">Recopilación by KIZEO</span>
+        </div>
     </div>
-    <article class="card">
-<div class="cbody">
-<h3>Comentaristas Latinos</h3>
-<div class="meta"><span class="badge b-bles">Solo BLES</span><span class="badge b-req">Requiere activador</span></div>
-<p class="desc">Paquete de comentarios en español latino.</p>
-<div class="btns"><a class="btn btn-bles" href="https://www.mediafire.com/file/zgo749cj3tc7bkg/BLES_Comentarios_Latinos_By_Team_PesGame.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@TeamPesGamePS3-PC" target="_blank" rel="noopener">Team PesGame</a></div>
-</div></article><article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYpp7erMrniGEmsNqXLASNtQIP3US87YRQSXF316zFhskJwFOOlRM6LuxmC2QJEh8vqXH89hUenl5_oCAezuiU206shUYKZ1NZ2aG6ydUmJzpi0mGOomMH3Vf6X7yjFSnPSQ42vMrYZvl6BJiq7a-ii3LRMH8AY-df-lyF5NNRKQx__asn6vqRat2JQotW/w480-h223/closs-diego.webp" alt="Comentarios Closs - La Torre · V4.2" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>Comentarios Closs - La Torre · V4.2</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span><span class="badge b-req">Requiere activador</span></div>
 
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/ne6h1wygwjoy0nm/BLUS_Closs_LaTorre_v4.2_By_TheViper12.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/fxtuuj3ntjk8jyf/BLES_Closs_LaTorre_v4.2_By_TheViper12.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@theviper1244" target="_blank" rel="noopener">TheViper12</a></div>
-</div></article><article class="card">
-<img class="cimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOPTwTzwilsYDy4acTkDufSOv64DWYVFOEl-ECs-bdu2y0v1J0uQ2PJ6rVECRlqzE_BvXmoF5BTv1AQKyjewYB2tFva6jpzjJibiRZYaAfYWex6XrOOmoOjKGq78g9-odwIEBdkUiO2VZgC6a3UlkR4KuAsgy0fCoHwMAq1FD7wJE5eJSeZXRRinIhz4B8/w480-h247/E0BRyuEXEAAjvrN.jpg" alt="Comentarios Closs - La Torre · V3.6" loading="lazy" width="480" height="240"><div class="cbody">
-<h3>Comentarios Closs - La Torre · V3.6</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span><span class="badge b-req">Requiere activador</span></div>
-<p class="desc">Publicado el 11/11/2023.</p>
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/dz104iy2i0kfnv3/BLUS_Closs_Latorre_v36_By_The_Viper12.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/1fbs8qp55pqqbk1/BLES_Closs_Latorre_v36_By_The_Viper12.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@theviper1244" target="_blank" rel="noopener">TheViper12</a></div>
-</div></article><article class="card">
-<div class="cbody">
-<h3>Comentarios Closs - La Torre · V3.3 (Juego Base)</h3>
-<div class="meta"><span class="badge b-both">BLUS + BLES</span><span class="badge b-noreq">No requiere activador</span></div>
-
-<div class="btns"><a class="btn btn-blus" href="https://www.mediafire.com/file/e8nylsshr4yj7vj/BLUS_Closs_Latorre_v3.3_Juego_Base_By_PES_Forever.pkg/file" target="_blank" rel="noopener"><span class="tag">BLUS</span>Descargar</a><a class="btn btn-bles" href="https://www.mediafire.com/file/fw7v44zolujgw2l/BLES_Closs_Latorre_v3.3_Juego_Base_By_PES_Forever.pkg/file" target="_blank" rel="noopener"><span class="tag">BLES</span>Descargar</a></div>
-<div class="credit">Por <a href="https://www.youtube.com/@PES_Forever" target="_blank" rel="noopener">PES Forever</a></div>
-</div></article>
-  </div>
-</section>
-
-<footer id="creditos">
-  <div class="wrap">
-    <h3>Recopilacion by KIZEO</h3>
-    <a class="yt" href="https://www.youtube.com/channel/UC68BJa6n5j3BhxsdxFlGqFQ" target="_blank" rel="noopener">Canal de YouTube</a>
-    <div class="credits">
-      Creditos a los autores originales de cada paquete:
-      <a href="https://www.youtube.com/@PES_Forever" target="_blank" rel="noopener">PES Forever</a> &middot;
-      <a href="https://www.youtube.com/@posetiados/videos" target="_blank" rel="noopener">Posetiados</a> &middot;
-      <a href="https://www.youtube.com/@JYMSNSL" target="_blank" rel="noopener">JYMSNSL</a> &middot;
-      <a href="https://www.youtube.com/@pesartok" target="_blank" rel="noopener">PESART</a> &middot;
-      <a href="https://www.youtube.com/@theviper1244" target="_blank" rel="noopener">TheViper12</a> &middot;
-      <a href="https://www.youtube.com/@TeamPesGamePS3-PC" target="_blank" rel="noopener">Team PesGame</a>
+    <div class="footer">
+        <p>© 2026 - Activador de Opcionales V16 | Optimizado para PS3 Browser</p>
+        <p>Visita nuestro canal: <a href="https://www.youtube.com/@PES_Forever" target="_blank">PES FOREVER</a> · <a href="https://www.youtube.com/@posetiados/videos" target="_blank">POSETIADOS</a> · <a href="https://www.youtube.com/@JYMSNSL" target="_blank">JymsNsl</a></p>
     </div>
-    <div class="legal">Pagina no oficial, creada por la comunidad. Todos los archivos se alojan en Mediafire / Linkvertise por sus respectivos autores.</div>
-  </div>
-</footer>
 
+</div>
 </body>
 </html>
-
