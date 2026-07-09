@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activador de Opcionales V16 - PES PS3</title>
     <style>
-        /* Estilos básicos compatibles con navegador PS3 */
+        /* Estilos básicos para compatibilidad con PS3 */
         body {
             background: #1a1a1a;
             color: #eee;
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 15px;
             font-size: 14px;
             line-height: 1.5;
         }
@@ -23,28 +23,32 @@
             text-decoration: underline;
         }
         .container {
-            max-width: 800px;
+            max-width: 820px;
             margin: 0 auto;
             background: #222;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.7);
-        }
-        h1, h2, h3 {
-            color: #fff;
-            margin-top: 0;
+            box-shadow: 0 0 15px rgba(0,0,0,0.8);
         }
         h1 {
             font-size: 28px;
             text-align: center;
             border-bottom: 2px solid #444;
-            padding-bottom: 10px;
+            padding-bottom: 12px;
+            margin-top: 0;
+            color: #fff;
         }
         h2 {
             font-size: 22px;
             border-left: 5px solid #66ccff;
             padding-left: 12px;
             margin: 30px 0 15px 0;
+            color: #fff;
+        }
+        h3 {
+            font-size: 18px;
+            margin: 15px 0 10px 0;
+            color: #ddd;
         }
         .section {
             background: #2a2a2a;
@@ -55,14 +59,15 @@
         }
         .badge {
             display: inline-block;
-            padding: 3px 10px;
+            padding: 4px 12px;
             border-radius: 20px;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: bold;
-            margin-right: 6px;
+            margin-right: 8px;
         }
         .badge-blus { background: #0077be; color: #fff; }
         .badge-bles { background: #cc5500; color: #fff; }
+        .badge-ambos { background: #6a6a6a; color: #fff; }
         .badge-activador { background: #6aa84f; color: #fff; }
         .badge-desactivador { background: #cc0000; color: #fff; }
         .badge-opcional { background: #ff9900; color: #000; }
@@ -77,27 +82,16 @@
             border-radius: 6px;
         }
         .download-row img {
-            height: 40px;
+            height: 60px;  /* más grande */
             width: auto;
             border: 0;
+            vertical-align: middle;
         }
         .download-row .links {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             align-items: center;
-        }
-        .download-row .links a {
-            display: inline-block;
-            background: #444;
-            padding: 4px 12px;
-            border-radius: 4px;
-            color: #fff;
-            font-size: 13px;
-            border: 1px solid #666;
-        }
-        .download-row .links a:hover {
-            background: #555;
         }
         .credit {
             font-size: 13px;
@@ -117,17 +111,6 @@
             margin: 10px 0;
             border: 1px solid #555;
         }
-        .tag {
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: bold;
-            margin: 2px 4px 2px 0;
-        }
-        .tag-blus { background: #0077be; color: #fff; }
-        .tag-bles { background: #cc5500; color: #fff; }
-        .tag-ambos { background: #6a6a6a; color: #fff; }
         .separator {
             border-top: 1px solid #444;
             margin: 25px 0;
@@ -140,25 +123,35 @@
             border-top: 1px solid #444;
             padding-top: 15px;
         }
-        /* Compatibilidad con PS3 */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        td {
-            padding: 6px;
-            vertical-align: middle;
-        }
         /* Para que los enlaces no se salgan */
         .break-word {
             word-break: break-all;
+        }
+        /* Ajuste para imágenes de botones más grandes */
+        .btn-img {
+            height: 65px;
+            width: auto;
+            border: 0;
+        }
+        /* Espaciado entre bloques de marcadores */
+        .marker-block {
+            background: #2e2e2e;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .inline-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 6px;
         }
     </style>
 </head>
 <body>
 <div class="container">
 
-    <h1>⚽ ACTIVADOR DE OPCIONALES V16</h1>
+    <h1>ACTIVADOR DE OPCIONALES V16</h1>
     <p style="text-align:center; font-size:16px;">
         <span style="background:#f4cccc; padding:4px 8px;">BASADO EN EL ACTIVADOR DE </span>
         <a href="https://www.youtube.com/@PES_Forever" style="background:#cc0000; color:white; padding:4px 10px; border-radius:4px;">PES FOREVER</a>
@@ -171,52 +164,50 @@
 
     <!-- ACTIVADOR -->
     <div class="section">
-        <h2>🔓 ACTIVADOR (REQUIERE INSTALACIÓN)</h2>
-        <p style="color:#ccc;">Instala el activador correspondiente a tu región para habilitar los opcionales.</p>
+        <h2>ACTIVADOR (REQUIERE INSTALACION)</h2>
+        <p style="color:#ccc;">Instala el activador correspondiente a tu region para habilitar los opcionales.</p>
         <div class="download-row">
             <span class="badge badge-blus">BLUS</span>
             <a href="https://www.mediafire.com/file/w33yz949vfb6n00/BLUS+Activador+Opcionales+v16+By+KiZeo.pkg/file" target="_blank">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w166-h82/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w166-h82/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
             </a>
-        </div>
-        <div class="download-row">
             <span class="badge badge-bles">BLES</span>
             <a href="https://www.mediafire.com/file/w4vl6l75jp83xxm/BLES+Activador+Opcionales+v16+By+KiZeo.pkg/file" target="_blank">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w163-h81/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w163-h81/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
             </a>
         </div>
-        <div class="credit">📌 <strong>Nota:</strong> Si ya tienes el activador instalado, solo necesitas los PKG opcionales.</div>
+        <div class="credit">Nota: Si ya tienes el activador instalado, solo necesitas los PKG opcionales.</div>
     </div>
 
     <!-- DESACTIVADOR -->
     <div class="section">
-        <h2>🔙 DESACTIVADOR (VUELVE A LA NORMALIDAD)</h2>
+        <h2>DESACTIVADOR (VUELVE A LA NORMALIDAD)</h2>
         <p style="color:#ccc;">Para desinstalar los opcionales y restaurar el juego original.</p>
         <div class="download-row">
             <span class="badge badge-blus">BLUS</span>
             <a href="https://www.mediafire.com/file/kmnti67izc56dce/BLUS+Desactivador+Opcionales+v16+By+KiZeo.pkg/file" target="_blank">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
             </a>
             <span class="badge badge-bles">BLES</span>
             <a href="https://www.mediafire.com/file/9hhc1ymusalt5fh/BLES+Desactivador+Opcionales+v16+By+KiZeo.pkg/file" target="_blank">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
             </a>
         </div>
     </div>
 
     <!-- OPCIONALES GENERALES (no requieren activador) -->
     <div class="section">
-        <h2>📁 OPCIONALES (NO REQUIEREN ACTIVADOR)</h2>
+        <h2>OPCIONALES (NO REQUIEREN ACTIVADOR)</h2>
         <p style="color:#ccc;">Estos archivos son personalizaciones adicionales, no son obligatorios para el funcionamiento del parche.</p>
 
-        <h3 style="margin-top:20px;">🎴 Iconos y Portadas PKG</h3>
-        <p><span class="tag tag-ambos">BLES / BLUS</span> (no requieren activador)</p>
+        <h3>Iconos y Portadas PKG</h3>
+        <p><span class="badge badge-ambos">BLES / BLUS</span> (no requieren activador)</p>
         <div class="center">
             <a href="https://kizeo0.github.io/PORTADAS-PES-BLUS-BLES/" target="_blank">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiB_9fO8X7vq92HimmStrtcFR3INAr_g6PMIdOvL8g0EDXlStD5vVD4f5UdME8ZGhHQTV40mlU7CY2Bdyko0R9JEBF4H5xCgAZva3Wr2gvJwdooXlDHoulFmvjWTEvN5OQ05vUE3Z0XsOdkI7PCCq96T2EFtTMUzmrvNa_QxpdYhQeq5GtkGLxc-43BUAUn/w425-h142/ChatGPT%20Image%201%20jun%202026,%2011_10_04%20a.m-Photoroom.png" alt="Portadas" style="max-width:100%; height:auto; border-radius:6px;">
             </a>
         </div>
-        <div class="credit">🔗 Haz clic en la imagen para acceder al repositorio de portadas.</div>
+        <div class="credit">Haz clic en la imagen para acceder al repositorio de portadas.</div>
         <div class="center" style="margin:10px 0;">
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggD4fsn_lqp2jIudx6CFEIowjJs_UWhDlkE8E-mEOiKWAjIhGrmp8TxYa5VbhpK8ttIRgVKyGEpeKrK3MAW-MlaEBuihHlQg1Dk7HrETLIR0EJ9nkBff-goklRYP7k4H7DzQyf5n5eJ9-6GDv5enD7MP6H0BAmRqqakRVHiKALCP_NMyEWl2wyndWJhUnQ/w569-h315/1783590861486-019f4649-e7a5-76fd-a438-221fc83a7133.jpeg" alt="Preview portadas" style="max-width:100%; height:auto; border-radius:6px; border:1px solid #555;">
         </div>
@@ -224,226 +215,226 @@
 
     <!-- MENUS (requieren activador) -->
     <div class="section">
-        <h2>🎮 MENÚS (REQUIEREN ACTIVADOR)</h2>
+        <h2>MENUS (REQUIEREN ACTIVADOR)</h2>
 
-        <!-- Menu Graphic eFootball 2024 FANTASY EDITION -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">🌟 MENU GRAPHIC eFootball 2024 FANTASY EDITION</h3>
+        <!-- Menu Fantasy -->
+        <div class="marker-block">
+            <h3>MENU GRAPHIC eFootball 2024 FANTASY EDITION</h3>
             <div class="center">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHri-hQmWVD_Ak6FQDP3rwmtXGcxPEdT1s8jGUqive4h3FVsqFfDDBgYFm1hGRfGz26AKxfsw69e6kveubazUJ4jakehGkT85Bm6J63TCUKFl4hCdb3u0LkJ9voOZrXeAJYTX433hCG2EMV07BPiP7ubM-qUUVbPt3cUrsJ7GPxJLUHX6ATx_KwCiDy2Rs/s1920/1031.png" alt="Menu Fantasy" style="max-width:100%; height:auto; border-radius:6px;">
             </div>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://www.mediafire.com/file/enrruo56l7p4mlp/blus_MENU_FANTASY_POSETIADOS.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://linkvertise.com/982764/bles-fantasy-menu-ps3/1" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
-            <div class="credit">Créditos: <a href="https://www.youtube.com/@posetiados/videos" target="_blank">POSETIADOS</a></div>
+            <div class="credit">Creditos: <a href="https://www.youtube.com/@posetiados/videos" target="_blank">POSETIADOS</a></div>
         </div>
 
-        <!-- Menu eFootball FC24 -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">⚡ NUEVO MENU eFootball Inspirado FC 24</h3>
+        <!-- Menu FC24 -->
+        <div class="marker-block">
+            <h3>NUEVO MENU eFootball Inspirado FC 24</h3>
             <div class="center">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzpqAgh9Tw242aNj05BDjF_51l7a7X_ibWF4KUxXLsejBxmFPRMTo-t03nTDR2DX7p9wn-7_SY_e2Xop07lXPQhjkqMVY-9qOaAiVUUOGTypuAR0xnzCDAcd6UWz0RhEzNFW9_UNy92FhJKb4bVmEJC6EpOUOGLLirY8mcUHCy58T9vZG-SjkhP5KFo1dO/s3347/IMG_20231010_190614.jpg" alt="Menu FC24" style="max-width:100%; height:auto; border-radius:6px;">
             </div>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://linkvertise.com/982764/blus-menu-eafc24-pes2018/1" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://linkvertise.com/982764/bles-menu-eafc24-pes2018/1" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
-            <div class="credit">Créditos: <a href="https://www.youtube.com/@posetiados/videos" target="_blank">POSETIADOS</a></div>
+            <div class="credit">Creditos: <a href="https://www.youtube.com/@posetiados/videos" target="_blank">POSETIADOS</a></div>
         </div>
 
         <!-- Menu eFootball 2024 1GB -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">📀 NUEVO MENU eFootball 2024 (1GB)</h3>
+        <div class="marker-block">
+            <h3>NUEVO MENU eFootball 2024 (1GB)</h3>
             <div class="center">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjELt0rjCujIeB5ppNZ7zjbFLFxCx6Q4Q1TyhzIzh6krXGymfVOqh3oaWTMLZ9qpdWmbUObFs1htZT2Hyx-KVEkVtBpn2JXK5ahyku5PQJ5kpbaDc1vd2V0-XiRfG8JRoPYxMv7NsYFWB_6uw6_dxvOjNR5_YXUAmXqQ-dD0ygYNaBkLYmjVWMoECrwmJwe/s1920/0913.jpg" alt="Menu eFootball 2024" style="max-width:100%; height:auto; border-radius:6px;">
             </div>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://www.mediafire.com/file/le3n4l5jd5qw7ux/NUEVO+MENU+eFootball+blus+by+JYMSNSL.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://www.mediafire.com/file/bg2i4pa2spxtgl1/NUEVO+MENU+eFootball+bles+by+JYMSNSL.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
-            <div class="credit">Créditos: <a href="https://www.youtube.com/@JYMSNSL" target="_blank">JymsNsl</a></div>
+            <div class="credit">Creditos: <a href="https://www.youtube.com/@JYMSNSL" target="_blank">JymsNsl</a></div>
         </div>
 
         <!-- Menu eFootball World -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">🌍 MENU eFootball World</h3>
+        <div class="marker-block">
+            <h3>MENU eFootball World</h3>
             <div class="center">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvGB4rQwVxQuld2CLj5rxeY114Epen3I2rf1qFGvetuawawroZa3QB10dYR3uHygqMf50paGap0EjbBNyNan8Ar5MUrvLja281mwqo2E3EJDN7hNqAagC8gbOD4YdXaoq7zxSWRzlgRUzD_aBuT1yyXcsnkZWOFh7ssrvZJbkMzFzbPLP6V0R0xmvwmzNC/s1280/maxresdefault.jpg" alt="Menu eFootball World" style="max-width:100%; height:auto; border-radius:6px;">
             </div>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://www.mediafire.com/file/5ej2inxvz9fwu9s/BLUS_eFOOTBALLWORLD_byPESART.rar/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://www.mediafire.com/file/k3ethm4sly4162k/BLES_eFOOTBALLWORLD_byPESART.rar/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
-            <div class="credit">Créditos: <a href="https://www.youtube.com/@pesartok" target="_blank">PESARTMENU</a></div>
+            <div class="credit">Creditos: <a href="https://www.youtube.com/@pesartok" target="_blank">PESARTMENU</a></div>
         </div>
     </div>
 
     <!-- MARCADORES -->
     <div class="section">
-        <h2>📊 MARCADORES (SCOREBOARDS)</h2>
+        <h2>MARCADORES (SCOREBOARDS)</h2>
 
         <!-- Muchos más marcadores BLUS -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">🔹 MUCHOS MÁS MARCADORES (SOLO BLUS)</h3>
+        <div class="marker-block">
+            <h3>MUCHOS MAS MARCADORES (SOLO BLUS)</h3>
             <div class="center">
                 <a href="https://kizeorepositoriospkg.blogspot.com/2025/11/potato-marcadores.html" target="_blank">
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmk4IWmLMFPlmyDGLXrVvIyDIJPkjzTS3INcfEszR01zgOWOWC7X0VXZg_4VDYjkZqc3tl6oAQk3LrRXaKQ1bXxaN_JN2qd7vSDrZBHjuPtHq4vUp_p8tPxgQVv-wQvhl6rqft7BhO9u8HbBCrELodShPPE4NmKH_1tRKquNnGZvhSLHVB3qncmMs8TmOW/s320/ChatGPT%20Image%201%20jun%202026,%2011_10_04%20a.m-Photoroom.png" alt="Marcadores BLUS" style="max-width:100%; height:auto; border-radius:6px;">
                 </a>
             </div>
-            <div class="credit">🔗 Haz clic en la imagen para ver más marcadores BLUS.</div>
+            <div class="credit">Haz clic en la imagen para ver más marcadores BLUS.</div>
         </div>
 
-        <!-- Marcador Mundial de Clubes -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">🏆 MARCADOR MUNDIAL DE CLUBES 2025</h3>
+        <!-- Mundial de Clubes -->
+        <div class="marker-block">
+            <h3>MARCADOR MUNDIAL DE CLUBES 2025</h3>
             <div class="center">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfx-cFML-5BBt6AIGhryU_z4F7dxybUNIix0TlMEb7pNYKJBwBu_3uGOyzBO_Peak6VW7JGA4VLMV_nT_ZWhH4bV4X_UqujijJdru_PyeiwqsJ2rm1a7aW9CHAbU9VlrqqFQ9tdXPFxYOSpfGeBA-hY9VguA8ZJtLrBNdnvJQPL11rZywvM3oASOxYSxKb/s1204/brave_screenshot_www.youtube.com.png" alt="Marcador Mundial de Clubes" style="max-width:100%; height:auto; border-radius:6px;">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfx-cFML-5BBt6AIGhryU_z4F7dxybUNIix0TlMEb7pNYKJBwBu_3uGOyzBO_Peak6VW7JGA4VLMV_nT_ZWhH4bV4X_UqujijJdru_PyeiwqsJ2rm1a7aW9CHAbU9VlrqqFQ9tdXPFxYOSpfGeBA-hY9VguA8ZJtLrBNdnvJQPL11rZywvM3oASOxYSxKb/s1204/brave_screenshot_www.youtube.com.png" alt="Marcador Mundial" style="max-width:100%; height:auto; border-radius:6px;">
             </div>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://www.mediafire.com/file/r7pvmgci5pg8kwv/BLUS_Scoreboard_FIFA_Mundial_De_Clubes_2025_By_PES_Forever.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://www.mediafire.com/file/mnyohq5lrq6ltck/BLES_Scoreboard_FIFA_Mundial_De_Clubes_2025_By_PES_Forever.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
-            <div class="credit">Créditos: <a href="https://www.youtube.com/@PES_Forever" target="_blank">PES FOREVER</a></div>
+            <div class="credit">Creditos: <a href="https://www.youtube.com/@PES_Forever" target="_blank">PES FOREVER</a></div>
         </div>
 
-        <!-- Marcador Copa America -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">🏅 MARCADOR COPA AMÉRICA 2024</h3>
+        <!-- Copa America -->
+        <div class="marker-block">
+            <h3>MARCADOR COPA AMERICA 2024</h3>
             <div class="center">
                 <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjFZTkhK_9Afn8THnl4_50A23Lb1axiNGwZ_o8bVJrIZpixHYIlNQLs7_lg9GRQoqKSunVaGW6TVIAhNOISXYvbPl3Dq3uPO8qnSmoLbCBvmjPLhCCmpJjE5_9qvFECr8AKxiwz6Uuz1qAYCMUAIUhr32BWgvm2HH__zkpfttrITcqK8oq5jgBjnk1M52Oe" alt="Copa America" style="max-width:100%; height:auto; border-radius:6px;">
             </div>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://www.mediafire.com/file/faz8wdxskw6xlsd/BLUS_Scoreboard_Copa_America_2024_Con_Replay_By_PES_Forever.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://www.mediafire.com/file/38thf1hb1n8a2gd/BLES_Scoreboard_Copa_America_2024_Con_Replay_By_PES_Forever.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
-            <div class="credit">Créditos: <a href="https://www.youtube.com/@PES_Forever" target="_blank">PES FOREVER</a></div>
+            <div class="credit">Creditos: <a href="https://www.youtube.com/@PES_Forever" target="_blank">PES FOREVER</a></div>
         </div>
 
-        <!-- Marcador La Liga 24/25 -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">🇪🇸 MARCADOR LA LIGA 24/25</h3>
+        <!-- La Liga -->
+        <div class="marker-block">
+            <h3>MARCADOR LA LIGA 24/25</h3>
             <div class="center">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinM2xq2Zv7ZZALcXvPfdqk1gqKBzjj0DBrkCaI4vz7zzfP9pk8U6_UiwrWpp2OpbcTCCK9BBTXUgy7vsCjHAt1nfVqQVLQiGsKhPfVAF_rRpMLkvA6XBhbzJhk9_Y3-xXl7JmCAioYVh3CeMqJspd-Y4xwx0bWXu4_mVwPX_2gvP0VkCYeQTQLEQMg-yxI/s1280/descargar.png" alt="La Liga" style="max-width:100%; height:auto; border-radius:6px;">
             </div>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://www.mediafire.com/file/asg5ns5nvc09okj/BLUS_Scoreboard_La_Liga_2024_Con_Replay_By_PES_Forever.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://www.mediafire.com/file/gy62sokq98c0q2x/BLES_Scoreboard_La_Liga_2024_Con_Replay_By_PES_Forever.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
-            <div class="credit">Créditos: <a href="https://www.youtube.com/@PES_Forever" target="_blank">PES FOREVER</a></div>
+            <div class="credit">Creditos: <a href="https://www.youtube.com/@PES_Forever" target="_blank">PES FOREVER</a></div>
         </div>
 
-        <!-- Marcador Premier League -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">🏴󠁧󠁢󠁥󠁮󠁧󠁿 MARCADOR PREMIER LEAGUE</h3>
+        <!-- Premier League -->
+        <div class="marker-block">
+            <h3>MARCADOR PREMIER LEAGUE</h3>
             <div class="center">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjADGuMLDPmidvL7PI4ksOCdyGchx2QKcsaHvMzDec3DSwMSwleLoMWBrVhYlzUOL6KkcIZAU3R5ftgLKJkY5-IfehgjzzwI6AA4pXf1_ovnbOShgiL2Ls1TU-MnXmLCysHJYYFdOPC5y1azkHwyKXFsMKr-elEu53O-_OTEqEe7h5hTHEGCHMUav9De8rW/s1920/0314.png" alt="Premier" style="max-width:100%; height:auto; border-radius:6px;">
             </div>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://www.mediafire.com/file/vll0ariwf83fst2/BLUS_Score_Premier_League.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://www.mediafire.com/file/v0sufm21vimoz3n/BLES_Score_Premier_League.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
         </div>
 
-        <!-- Marcador ESPN v3 -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">📺 MARCADOR ESPN V3</h3>
+        <!-- ESPN v3 -->
+        <div class="marker-block">
+            <h3>MARCADOR ESPN V3</h3>
             <div class="center">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjumNrEE3RAGmJ5x501bH5w-Pj7Y2Msxljhe6uQINOLAuUxNLeDKMXab47m4QiQUtMLcTOY57ZJZDtl9PDGttc9E-rnpE406Fba7n6KHeujNtFzabF0lP0WtB1b2EDPfHOGHeaaiEKT29vC58AzsEZAqr54vpEKTXYUOe8LHttsFwaQpjoELumRxMvdVup/s1280/eFootball%202023.png" alt="ESPN v3" style="max-width:100%; height:auto; border-radius:6px;">
             </div>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://www.mediafire.com/file/mm9mwyu44kyg7u2/BLUS_Scoreboard_ESPN_v3_Sin_Replay.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://www.mediafire.com/file/d147us16fvizsbl/BLES_Scoreboard_ESPN_v3_Sin_Replay.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
         </div>
 
-        <!-- Marcador ESPN v4 -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">📺 MARCADOR ESPN V4</h3>
+        <!-- ESPN v4 -->
+        <div class="marker-block">
+            <h3>MARCADOR ESPN V4</h3>
             <div class="center">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIcTe3i1twxKVQSOz8oVD05Gegg5aUJZ04Izow_ntcciUYR_yKt2oVEL0hlXPSyNHUnuOmiEDwNlYvJTDgYqwcKOjFGoTi5Y2IvzRl4KyNVI6O-WoBT29eg_e1fcGERemumXS4qNGHAMbos4qFidW3tkwyPHoysRFONQApDdXFaMcs0Pyl-OCezehVbcwb/s1280/eFootball%202023_1.png" alt="ESPN v4" style="max-width:100%; height:auto; border-radius:6px;">
             </div>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://www.mediafire.com/file/07m12v70xsh8qa5/BLUS_Scoreboard_ESPN_v4_Sin_Replay.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://www.mediafire.com/file/bpojep4ya7qxa79/BLES_Scoreboard_ESPN_v4_Sin_Replay.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
         </div>
 
-        <!-- Marcador Sportv V1, V2, V3 -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">📺 MARCADOR SPORTV (V1, V2, V3)</h3>
-            <p><span class="tag tag-ambos">BLES / BLUS</span></p>
+        <!-- Sportv V1, V2, V3 -->
+        <div class="marker-block">
+            <h3>MARCADOR SPORTV (V1, V2, V3)</h3>
+            <p><span class="badge badge-ambos">BLES / BLUS</span></p>
             <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin:10px 0;">
                 <div>
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirhtIrO_S-QGZ6FLqYSoOj9X0vx0we0VzL5B6I8d2xypTEO4_iam5gHZ6TRQ1UtLpIyGPS1Jgj5jfqDDDzrXMNBTHYInEV9r7Oi939s0WdqLcllnZaMcPFUWFwFLNWfIqVfiH3AKM6dErFnJn_g7JN1cHw-VIQUMZmm6HnTFhWekApmn-0PHczmT8p2900/s1920/v1.jpg" alt="Sportv V1" style="max-width:200px; height:auto; border-radius:6px;">
                     <div class="download-row" style="justify-content:center;">
                         <span class="badge badge-blus">BLUS</span>
                         <a href="https://www.mediafire.com/file/wtzz7xuquc4nfrb/Premier+V1+blus.pkg/file" target="_blank">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:30px;">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                         </a>
                         <span class="badge badge-bles">BLES</span>
                         <a href="https://www.mediafire.com/file/w8grw0cijh8r1u7/Premier+V1+bles.pkg/file" target="_blank">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:30px;">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                         </a>
                     </div>
                 </div>
@@ -452,11 +443,11 @@
                     <div class="download-row" style="justify-content:center;">
                         <span class="badge badge-blus">BLUS</span>
                         <a href="https://www.mediafire.com/file/yeydx3puokavzzc/Premier+v2+blus.pkg/file" target="_blank">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:30px;">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                         </a>
                         <span class="badge badge-bles">BLES</span>
                         <a href="https://www.mediafire.com/file/vyvphrf6ilvtp4e/Premier+v2+bles.pkg/file" target="_blank">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:30px;">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                         </a>
                     </div>
                 </div>
@@ -465,99 +456,99 @@
                     <div class="download-row" style="justify-content:center;">
                         <span class="badge badge-blus">BLUS</span>
                         <a href="https://www.mediafire.com/file/mwi0kueapgxv68e/Premier+V3+blus.pkg/file" target="_blank">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:30px;">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                         </a>
                         <span class="badge badge-bles">BLES</span>
                         <a href="https://www.mediafire.com/file/ohk1ukqhikmk1by/Premier+V3+bles.pkg/file" target="_blank">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:30px;">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w123-h61/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="credit">Créditos: <a href="https://www.youtube.com/@JYMSNSL" target="_blank">JymsNsl</a></div>
+            <div class="credit">Creditos: <a href="https://www.youtube.com/@JYMSNSL" target="_blank">JymsNsl</a></div>
         </div>
     </div>
 
     <!-- COMENTARIOS -->
     <div class="section">
-        <h2>🎙️ COMENTARIOS (REQUIEREN ACTIVADOR)</h2>
+        <h2>COMENTARIOS (REQUIEREN ACTIVADOR)</h2>
         <p style="color:#ccc;">Estos comentaristas reemplazan a los argentinos. Cambia el comentarista en el juego para escucharlos.</p>
         <p style="color:#ccc;">Para BLES, necesitas tener previamente los comentarios latinos instalados.</p>
 
         <!-- Comentarios Latinos BLES -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">🌎 COMENTARIOS LATINOS (BLES)</h3>
+        <div class="marker-block">
+            <h3>COMENTARIOS LATINOS (BLES)</h3>
             <div class="download-row">
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://www.mediafire.com/file/zgo749cj3tc7bkg/BLES_Comentarios_Latinos_By_Team_PesGame.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
-            <div class="credit">Créditos: Team PesGames</div>
+            <div class="credit">Creditos: Team PesGames</div>
         </div>
 
-        <!-- Comentarios Closs - Latorre V4.2 -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">🎤 CLOSS - LATORRE V4.2</h3>
+        <!-- Closs Latorre V4.2 -->
+        <div class="marker-block">
+            <h3>CLOSS - LATORRE V4.2</h3>
             <div class="center">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYpp7erMrniGEmsNqXLASNtQIP3US87YRQSXF316zFhskJwFOOlRM6LuxmC2QJEh8vqXH89hUenl5_oCAezuiU206shUYKZ1NZ2aG6ydUmJzpi0mGOomMH3Vf6X7yjFSnPSQ42vMrYZvl6BJiq7a-ii3LRMH8AY-df-lyF5NNRKQx__asn6vqRat2JQotW/s620/closs-diego.webp" alt="Closs Latorre" style="max-width:100%; height:auto; border-radius:6px;">
             </div>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://www.mediafire.com/file/ne6h1wygwjoy0nm/BLUS_Closs_LaTorre_v4.2_By_TheViper12.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://www.mediafire.com/file/fxtuuj3ntjk8jyf/BLES_Closs_LaTorre_v4.2_By_TheViper12.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
-            <div class="credit">Créditos: The Viper12</div>
+            <div class="credit">Creditos: The Viper12</div>
         </div>
 
-        <!-- Closs - Latorre V3.6 -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">🎤 CLOSS - LATORRE V3.6</h3>
+        <!-- Closs Latorre V3.6 -->
+        <div class="marker-block">
+            <h3>CLOSS - LATORRE V3.6</h3>
             <div class="center">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOPTwTzwilsYDy4acTkDufSOv64DWYVFOEl-ECs-bdu2y0v1J0uQ2PJ6rVECRlqzE_BvXmoF5BTv1AQKyjewYB2tFva6jpzjJibiRZYaAfYWex6XrOOmoOjKGq78g9-odwIEBdkUiO2VZgC6a3UlkR4KuAsgy0fCoHwMAq1FD7wJE5eJSeZXRRinIhz4B8/s1200/E0BRyuEXEAAjvrN.jpg" alt="Closs Latorre v3.6" style="max-width:100%; height:auto; border-radius:6px;">
             </div>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://www.mediafire.com/file/dz104iy2i0kfnv3/BLUS_Closs_Latorre_v36_By_The_Viper12.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://www.mediafire.com/file/1fbs8qp55pqqbk1/BLES_Closs_Latorre_v36_By_The_Viper12.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
-            <div class="credit">Créditos: The Viper12</div>
+            <div class="credit">Creditos: The Viper12</div>
         </div>
 
-        <!-- Closs - Latorre V3.3 (NO requiere activador) -->
-        <div style="background:#2e2e2e; padding:12px; border-radius:6px; margin-bottom:15px;">
-            <h3 style="margin-top:0;">🎤 CLOSS - LATORRE V3.3 <span class="badge" style="background:#6aa84f;">NO REQUIERE ACTIVADOR</span></h3>
+        <!-- Closs Latorre V3.3 (NO requiere activador) -->
+        <div class="marker-block">
+            <h3>CLOSS - LATORRE V3.3 <span class="badge" style="background:#6aa84f;">NO REQUIERE ACTIVADOR</span></h3>
             <div class="download-row">
                 <span class="badge badge-blus">BLUS</span>
                 <a href="https://www.mediafire.com/file/e8nylsshr4yj7vj/BLUS_Closs_Latorre_v3.3_Juego_Base_By_PES_Forever.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA39LTnvG0_00NZTcCUFlD3Y5dInUD9ryguVduxDHDVEZ_OW5N8LzSgywD86Q9el-l5gkqYIZ6PiB5cERFxRNeubVmYbOQUMG_4pXAYsY-R_FBSug5oxJJSAZOYQFITiCehX04YV3_Tu8ocluW321hYh8vLzmfZYGB0EibzP3WOTM_chHqJxr8bh4xQdKC/w138-h68/WhatsApp%20Image%202023-07-05%20at%2019.36.24.jpeg" alt="BLUS" class="btn-img">
                 </a>
                 <span class="badge badge-bles">BLES</span>
                 <a href="https://www.mediafire.com/file/fw7v44zolujgw2l/BLES_Closs_Latorre_v3.3_Juego_Base_By_PES_Forever.pkg/file" target="_blank">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" style="height:40px;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oL-f9IR_I484D1B8XNEmZ87cfQqYzAlQkuv5HIuXdpVnQ-EdTUke9JZqAa48IAuGI4s3X6m7AWnjQgJ2wvb0NQDf4owxIGNA_0LoeyeP2YhN2GWOS3vNFeuBWPsN50GO-rw_qmEFvGEE6P97mtF9GDf6ZBzOEPcQxM_Bmtr-8PeZFMYzKSTE5h_nGfbB/w139-h69/WhatsApp%20Image%202023-07-05%20at%2019.36.31.jpeg" alt="BLES" class="btn-img">
                 </a>
             </div>
-            <div class="credit">Créditos: PES FOREVER</div>
+            <div class="credit">Creditos: PES FOREVER</div>
         </div>
 
         <div class="credit" style="margin-top:10px;">
-            <span style="background:#ff00fe; color:#fff; padding:2px 10px; border-radius:12px;">Recopilación by KIZEO</span>
+            <span style="background:#ff00fe; color:#fff; padding:2px 10px; border-radius:12px;">Recopilacion by KIZEO</span>
         </div>
     </div>
 
     <div class="footer">
-        <p>© 2026 - Activador de Opcionales V16 | Optimizado para PS3 Browser</p>
-        <p>Visita nuestro canal: <a href="https://www.youtube.com/@PES_Forever" target="_blank">PES FOREVER</a> · <a href="https://www.youtube.com/@posetiados/videos" target="_blank">POSETIADOS</a> · <a href="https://www.youtube.com/@JYMSNSL" target="_blank">JymsNsl</a></p>
+        <p>2026 - Activador de Opcionales V16 | Optimizado para PS3 Browser</p>
+        <p>Visita: <a href="https://www.youtube.com/@PES_Forever" target="_blank">PES FOREVER</a> · <a href="https://www.youtube.com/@posetiados/videos" target="_blank">POSETIADOS</a> · <a href="https://www.youtube.com/@JYMSNSL" target="_blank">JymsNsl</a></p>
     </div>
 
 </div>
